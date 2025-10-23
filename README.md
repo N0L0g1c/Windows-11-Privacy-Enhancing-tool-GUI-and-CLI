@@ -39,10 +39,10 @@ python run-gui.py
 ### PowerShell Version
 ```powershell
 # Download and run (easiest way)
-iwr -useb https://raw.githubusercontent.com/your-username/windows-privacy-guard/main/privacy-guard.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/N0L0g1c/Windows-11-Privacy-Enhancing-tool-GUI-and-CLI/main/privacy-guard.ps1 | iex
 
 # Or download first, then run
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/your-username/windows-privacy-guard/main/privacy-guard.ps1" -OutFile "privacy-guard.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/N0L0g1c/Windows-11-Privacy-Enhancing-tool-GUI-and-CLI/main/privacy-guard.ps1" -OutFile "privacy-guard.ps1"
 .\privacy-guard.ps1
 ```
 

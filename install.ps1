@@ -17,7 +17,7 @@ param(
 )
 
 # Script URL (replace with actual repository URL)
-$ScriptUrl = "https://raw.githubusercontent.com/your-username/windows-privacy-guard/main/privacy-guard.ps1"
+$ScriptUrl = "https://raw.githubusercontent.com/N0L0g1c/Windows-11-Privacy-Enhancing-tool-GUI-and-CLI/main/privacy-guard.ps1"
 
 # Download and execute the main script
 try {
