@@ -1,0 +1,171 @@
+{
+  "version": "1.0.0",
+  "description": "Windows Privacy Guard Configuration",
+  "privacy": {
+    "telemetry": {
+      "enabled": false,
+      "allowTelemetry": false,
+      "allowDeviceNameInTelemetry": false,
+      "disableErrorReporting": true,
+      "disableCustomerExperience": true
+    },
+    "tracking": {
+      "enabled": false,
+      "disableActivityHistory": true,
+      "disableUsageStatistics": true,
+      "disableAppUsageTracking": true,
+      "disableSearchTracking": true,
+      "disableVoiceDataCollection": true
+    },
+    "advertising": {
+      "enabled": false,
+      "disableAdvertisingID": true,
+      "disablePersonalizedAds": true,
+      "disableStartMenuSuggestions": true,
+      "disablePersonalizedContent": true,
+      "disableSearchSuggestions": true
+    },
+    "cortana": {
+      "enabled": false,
+      "disableCortana": true,
+      "disableVoiceDataCollection": true,
+      "disableVoiceRecognition": true,
+      "disableCortanaService": true
+    },
+    "location": {
+      "enabled": false,
+      "disableLocationServices": true,
+      "disableLocationTracking": true,
+      "disableLocationHistory": true,
+      "disableLocationBasedServices": true
+    },
+    "bloatware": {
+      "enabled": false,
+      "removeMicrosoftApps": true,
+      "removeBingApps": true,
+      "removeXboxApps": true,
+      "removeOfficeApps": true,
+      "removeEntertainmentApps": true
+    },
+    "services": {
+      "enabled": false,
+      "disableDiagTrack": true,
+      "disableWbioSrvc": true,
+      "disableWSearch": true,
+      "disableXboxServices": true,
+      "disableOneDrive": true
+    },
+    "windowsUpdate": {
+      "enabled": false,
+      "disableTelemetry": true,
+      "disableDriverUpdates": true,
+      "disableAutomaticDriverUpdates": true
+    },
+    "oneDrive": {
+      "enabled": false,
+      "disableOneDrive": true,
+      "disableOneDriveSync": true,
+      "disableOneDriveIntegration": true
+    },
+    "windowsHello": {
+      "enabled": false,
+      "disableWindowsHello": true,
+      "disableBiometricDataCollection": true,
+      "disableFaceRecognition": true,
+      "disableFingerprintRecognition": true
+    },
+    "feedback": {
+      "enabled": false,
+      "disableFeedbackHub": true,
+      "disableUserFeedback": true,
+      "disableFeedbackCollection": true
+    }
+  },
+  "levels": {
+    "conservative": {
+      "telemetry": true,
+      "advertising": true,
+      "location": true,
+      "cortana": false,
+      "bloatware": false,
+      "services": false,
+      "windowsUpdate": false,
+      "oneDrive": false,
+      "windowsHello": false,
+      "feedback": false
+    },
+    "aggressive": {
+      "telemetry": true,
+      "tracking": true,
+      "advertising": true,
+      "cortana": true,
+      "location": true,
+      "bloatware": true,
+      "services": true,
+      "windowsUpdate": true,
+      "oneDrive": true,
+      "windowsHello": true,
+      "feedback": true
+    },
+    "custom": {
+      "telemetry": false,
+      "tracking": false,
+      "advertising": false,
+      "cortana": false,
+      "location": false,
+      "bloatware": false,
+      "services": false,
+      "windowsUpdate": false,
+      "oneDrive": false,
+      "windowsHello": false,
+      "feedback": false
+    }
+  },
+  "whitelist": {
+    "essentialServices": [
+      "Windows Update",
+      "Windows Defender",
+      "Windows Security",
+      "Event Log",
+      "Windows Time",
+      "Windows Audio",
+      "Windows Audio Endpoint Builder",
+      "Plug and Play",
+      "Power",
+      "Remote Procedure Call (RPC)",
+      "Security Accounts Manager",
+      "Server",
+      "Windows Management Instrumentation",
+      "Workstation"
+    ],
+    "essentialApps": [
+      "Windows Calculator",
+      "Windows Notepad",
+      "Windows Paint",
+      "Windows Media Player",
+      "Windows Photo Viewer",
+      "Windows Defender",
+      "Windows Security"
+    ]
+  },
+  "backup": {
+    "enabled": true,
+    "directory": "$env:USERPROFILE\\.privacy-guard\\backups",
+    "beforeChanges": true,
+    "afterChanges": false,
+    "retention": 30
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "file": "$env:TEMP\\privacy-guard.log",
+    "maxSize": "10MB",
+    "retention": 30
+  },
+  "features": {
+    "continuousMonitoring": true,
+    "automaticRestore": false,
+    "privacyAlerts": true,
+    "systemHealth": true
+  }
+}
